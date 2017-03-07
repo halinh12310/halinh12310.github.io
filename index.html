@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>Yêu vợ</title>
+
+<style type="text/css">
+@font-face {
+	font-family: digit;
+	src: url('digital-7_mono.ttf') format("truetype");
+}
+</style>
+
+<link href="css/default.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/garden.js"></script>
+<script type="text/javascript" src="js/functions.js"></script>
+
+</head>
+
+<body>
+<audio autoplay="autopaly">
+		<source src="music/motnha.mp3" type="audio/mp3">
+</audio>
+<div id="main">
+<div id="mainDiv">
+	<div id="content">
+		<div id="code">
+			<span class="comments">~</span><br />
+			<span class="space"/><span class="comments">*Nhân ngày 8/3,</span><br />
+			<span class="space"/><span class="comments">*Anh muốn nới với iu một điều!</span><br />
+			<span class="space"/><span class="comments">~</span><br />
+			<span class="keyword">Anh yêu em nhiều lắm!</span><br />
+			<span class="comments">Có được em là may mắn lớn nhất trong cuộc đời anh. </span><br />
+			<span class="keyword">Anh</span> rất <span class="keyword">hạnh phúc</span>;<br />
+			<span class="keyword">Khi</span> có <span class="keyword">em ở bên</span>;<br />
+			<span class="placeholder"/><span class="comments">// Ngay bây giờ, lúc này....</span><br />
+			<span class="placeholder"/><span class="comments">// Và cả trong tương lai.</span><br />
+			<span class="placeholder"/>Anh muốn;<br />
+			<span class="comments">// Anh gia đình nhỏ bé của mình thật hạnh phúc.</span><br />
+			<br>
+			<br>
+			Anh muốn nói với iu:<br />
+			<span class="keyword">Vợ iu</span>, iu vợ...Chụt...hihi;<br />
+		</div>
+		<div id="loveHeart">
+			<canvas id="garden"></canvas>
+			<div id="words">
+				<div id="messages">
+					Vợ iu, yêu vợ nhiều nhiều... ~
+				</div>
+				<div id="loveu">Mỗi ngày được ở bên iu là 1 ngày hạnh phúc.<br/>
+					<div class="signature">- Siêu nhân của vợ<div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div style="text-align:center;margin:0px 0; font:normal 14px/24px 'MicroSoft YaHei';">
+<p style="font-size: 2.2rem;">© 2017 Siêu nhân của vợ iu!</b></p>
+</div>
+<script type="text/javascript">
+var offsetX = $("#loveHeart").width() / 2;
+var offsetY = $("#loveHeart").height() / 2 - 55;
+var together = new Date();
+together.setFullYear(2009, 1, 8);
+together.setHours(0);
+together.setMinutes(0);
+together.setSeconds(0);
+together.setMilliseconds(0);
+
+if (!document.createElement('canvas').getContext) {
+	var msg = document.createElement("div");
+	msg.id = "errorMsg";
+	msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+";
+	document.body.appendChild(msg);
+	$("#code").css("display", "none")
+	$("#copyright").css("position", "absolute");
+	$("#copyright").css("bottom", "10px");
+	document.execCommand("stop");
+} else {
+	setTimeout(function () {
+		startHeartAnimation();
+	}, 5000);
+
+	timeElapse(together);
+	setInterval(function () {
+		timeElapse(together);
+	}, 500);
+
+	adjustCodePosition();
+	$("#code").typewriter();
+}
+</script>
+</body>
+</html>

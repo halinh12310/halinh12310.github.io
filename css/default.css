@@ -1,0 +1,103 @@
+﻿body{
+	margin:0;
+	padding:0;
+	background:#ffe;
+	font-size:12px;
+	overflow:auto
+}
+#content
+{
+	margin: 0 auto;
+	maxWidth : 1080px;
+}
+#mainDiv{
+	width:100%;
+	height:100%
+}
+html{
+	font-size: 62.5%;
+}
+#loveHeart{
+	float:left;
+	width:650px;
+	height:620px
+}
+#garden{
+	width:100%;
+	height:100%
+}
+#elapseClock{
+	text-align:right;
+	font-size:1.8rem;
+	margin-top:10px;
+	margin-bottom:10px
+}
+#words{
+	font-family:"sans-serif";
+	width:500px;
+	font-size:2.6rem;
+	color:#666
+}
+#messages{
+	display:none
+}
+#elapseClock .digit{
+	font-family:"digit";
+	font-size:3.6rem
+}
+#loveu{
+	padding:5px;
+	font-size:2.5rem;
+	margin-right:20px;
+	text-align:right;
+	display:none
+}
+#loveu .signature{
+	margin-top:10px;
+	font-size:2.2rem;
+	font-style:italic
+}
+#clickSound{
+	display:none
+}
+#code{
+	float:left;
+	width:380px;
+	height:380px;
+	color:#333;
+	font-family:"Consolas","Monaco","Bitstream Vera Sans Mono","Courier New","sans-serif";
+	font-size:2rem
+}
+#code .string{
+	color:#2a36ff
+}
+#code .keyword{
+	color:#7f0055;
+	font-weight:bold
+}
+#code .placeholder{
+	margin-left:15px
+}
+#code .space{
+	margin-left:7px
+}
+#code .comments{
+	color:#3f7f5f
+}
+#copyright{
+	margin-top:10px;
+	text-align:center;
+	width:100%;
+	color:#666
+}
+#errorMsg{
+	width:100%;
+	text-align:center;
+	font-size:2.4rem;
+	position:absolute;
+	top:100px;
+	left:0
+}
+#copyright a{
+	color:#666
+}
