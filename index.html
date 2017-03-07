@@ -17,12 +17,23 @@
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/garden.js"></script>
 <script type="text/javascript" src="js/functions.js"></script>
+<script type="text/javascript">
+        function init() {
+            var myAudio = document.getElementById("audio");
+            myAudio.addEventListener('ended', loopAudio, false);
+        }
+        function loopAudio() {
+            var myAudio = document.getElementById("audio");
+            myAudio.play();
+        }
+    </script>
 </head>
 
 <body>
 <audio autoplay="autoplay">
 		<source src="music/motnha.mp3" type="audio/mp3">
 </audio>
+<audio id="audio/mp3" src="music/motnha.mp3" controls autoplay="autoplay"></audio>
 <div id="main">
 <div id="mainDiv">
 	<div id="content">
