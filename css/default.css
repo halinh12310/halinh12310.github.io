@@ -101,3 +101,15 @@ html{
 #copyright a{
 	color:#666
 }
+#tap
+{
+    width: 500px;
+    height: 100%;
+    margin: 0 auto;
+    font-size: 3rem;
+    font-family:"Consolas","Monaco","Bitstream Vera Sans Mono","Courier New","sans-serif";
+}
+.ui-loader
+{
+    display: none;
+}
